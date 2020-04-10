@@ -1,0 +1,14 @@
+
+# creating the zip files (-m for module) from win CLI
+-----------------------------------------------------
+python -m reader.compressed.gzipped test.gz data compressed with gzip
+python -m reader.compressed.bzipped test.bz2 data compressed with bz2
+
+# goto REPL and run
+-------------------
+python
+import reader
+r = reader.Reader('test.bz2')
+r.read()
+
+locals()
